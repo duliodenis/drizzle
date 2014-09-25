@@ -1,7 +1,7 @@
-drizzle
+![alt text](https://raw.githubusercontent.com/duliodenis/drizzle/master/art/drizzle-app-icon-80x80.png "drizzle logo") drizzle
 =======
 
-This is a Swift iOS Weather App that is designed to tell the user what to wear.
+Is a Swift iOS Weather App that is designed to tell the user what to wear.
 
 ###Support or Contact
 

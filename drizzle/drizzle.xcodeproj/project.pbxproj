@@ -12,6 +12,7 @@
 		3E41D17119D1B15A004547DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E41D16F19D1B15A004547DA /* Main.storyboard */; };
 		3E41D17319D1B15A004547DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E41D17219D1B15A004547DA /* Images.xcassets */; };
 		3E41D17F19D1B15B004547DA /* drizzleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E41D17E19D1B15B004547DA /* drizzleTests.swift */; };
+		6CC0A37C19D3B00B0043BF82 /* Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC0A37B19D3B00B0043BF82 /* Current.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		3E41D17819D1B15B004547DA /* drizzleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = drizzleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E41D17D19D1B15B004547DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E41D17E19D1B15B004547DA /* drizzleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drizzleTests.swift; sourceTree = "<group>"; };
+		6CC0A37B19D3B00B0043BF82 /* Current.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Current.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				3E41D16B19D1B15A004547DA /* AppDelegate.swift */,
 				3E41D16D19D1B15A004547DA /* ViewController.swift */,
+				6CC0A37B19D3B00B0043BF82 /* Current.swift */,
 				3E41D16F19D1B15A004547DA /* Main.storyboard */,
 				3E41D17219D1B15A004547DA /* Images.xcassets */,
 				3E41D16919D1B15A004547DA /* Supporting Files */,
@@ -208,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CC0A37C19D3B00B0043BF82 /* Current.swift in Sources */,
 				3E41D16E19D1B15A004547DA /* ViewController.swift in Sources */,
 				3E41D16C19D1B15A004547DA /* AppDelegate.swift in Sources */,
 			);
@@ -395,6 +399,7 @@
 				3E41D18419D1B15B004547DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E41D18519D1B15B004547DA /* Build configuration list for PBXNativeTarget "drizzleTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +408,7 @@
 				3E41D18719D1B15B004547DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

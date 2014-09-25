@@ -18,7 +18,22 @@ class ViewController: UIViewController {
         let baseURL = NSURL(string: "https://api.forecast.io/forecast/\(apiKey)/")
         let forecastURL = NSURL(string: coordinates, relativeToURL: baseURL)
         let weatherData = NSData.dataWithContentsOfURL(forecastURL, options: nil, error: nil)
-        println(weatherData)
+        
+        let sharedSession = NSURLSession.sharedSession()
+        let downloadTask: NSURLSessionDownloadTask = sharedSession.downloadTaskWithURL(forecastURL, completionHandler: { (location: NSURL!, response: NSURLResponse!, error: NSError!) -> Void in
+            
+            if (error == nil) {
+                let dataObject = NSData(contentsOfURL: location)
+                let weatherDictionary : NSDictionary = NSJSONSerialization.JSONObjectWithData(dataObject, options: nil, error: nil) as NSDictionary
+                
+                let currentWeatherDictionary = Current(weatherDictionary: weatherDictionary)
+                println(currentWeatherDictionary.temperature)
+                println(currentWeatherDictionary.summary)
+                println(currentWeatherDictionary.currentTime!)
+            }
+            
+        })
+        downloadTask.resume()
     }
 
 }
