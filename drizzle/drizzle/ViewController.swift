@@ -10,6 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
+    @IBOutlet weak var iconView: UIImageView!
+    @IBOutlet weak var currentTimeLabel: UILabel!
+    @IBOutlet weak var temperatureLabel: UILabel!
+    @IBOutlet weak var humidityLabel: UILabel!
+    @IBOutlet weak var precipitationLabel: UILabel!
+    @IBOutlet weak var summaryLabel: UILabel!
+    
+    
     private let apiKey = "YOUR-FORECAST-API-KEY"
                             
     override func viewDidLoad() {
@@ -27,9 +36,17 @@ class ViewController: UIViewController {
                 let weatherDictionary : NSDictionary = NSJSONSerialization.JSONObjectWithData(dataObject, options: nil, error: nil) as NSDictionary
                 
                 let currentWeatherDictionary = Current(weatherDictionary: weatherDictionary)
-                println(currentWeatherDictionary.temperature)
-                println(currentWeatherDictionary.summary)
-                println(currentWeatherDictionary.currentTime!)
+                
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    self.temperatureLabel.text = "\(currentWeatherDictionary.temperature)"
+                    self.iconView.image = currentWeatherDictionary.icon!
+                    self.currentTimeLabel.text = "At \(currentWeatherDictionary.currentTime!) it is"
+                    self.temperatureLabel.text = "\(currentWeatherDictionary.temperature)"
+                    self.humidityLabel.text = "\(currentWeatherDictionary.humidity)"
+                    self.precipitationLabel.text = "\(currentWeatherDictionary.precipitationProbability)"
+                    self.summaryLabel.text = "\(currentWeatherDictionary.summary)"
+                })
+                
             }
             
         })
