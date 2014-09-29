@@ -30,7 +30,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RAIN?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjw-TD-TLR">
-                                <rect key="frame" x="229.5" y="377" width="34.5" height="14"/>
+                                <rect key="frame" x="229" y="377" width="34.5" height="14"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -66,6 +66,21 @@
                                     <constraint firstAttribute="width" constant="60" id="beh-V9-hg0"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhf-Cy-qAe">
+                                <rect key="frame" x="140" y="28" width="43" height="43"/>
+                                <state key="normal" image="refresh">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="refresh" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UA5-Le-wyQ"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="pRF-H7-wH6">
+                                <rect key="frame" x="151" y="40" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="degree" translatesAutoresizingMaskIntoConstraints="NO" id="EUy-fh-McD">
+                                <rect key="frame" x="266" y="206" width="36" height="36"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New York, NY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGe-N7-6As">
                                 <rect key="frame" x="106" y="109" width="132.5" height="26"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="22"/>
@@ -78,7 +93,9 @@
                             <constraint firstItem="ZQa-gP-j9f" firstAttribute="top" secondItem="5sO-Nu-6Wk" secondAttribute="bottom" constant="10" id="0x1-HV-Gfh"/>
                             <constraint firstItem="lGe-N7-6As" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="89" id="62p-oi-RWP"/>
                             <constraint firstAttribute="centerY" secondItem="d85-jC-dmf" secondAttribute="centerY" id="9X0-bY-L4H"/>
+                            <constraint firstAttribute="centerX" secondItem="hhf-Cy-qAe" secondAttribute="centerX" constant="-1.5" id="B5n-ke-cCb"/>
                             <constraint firstAttribute="centerX" secondItem="kL5-Rs-f6y" secondAttribute="centerX" constant="-0.25" id="G2U-cx-5bJ"/>
+                            <constraint firstItem="lGe-N7-6As" firstAttribute="top" secondItem="hhf-Cy-qAe" secondAttribute="bottom" constant="38" id="HUO-2Q-ril"/>
                             <constraint firstItem="fhg-lv-ZAr" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="72" id="R8L-pH-LtC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bjw-TD-TLR" secondAttribute="trailing" constant="40" id="RPl-HQ-dLn"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="kL5-Rs-f6y" secondAttribute="bottom" constant="90" id="S7k-da-F7h"/>
@@ -86,12 +103,16 @@
                             <constraint firstAttribute="centerX" secondItem="lGe-N7-6As" secondAttribute="centerX" constant="-12.25" id="V8P-ej-2Zb"/>
                             <constraint firstItem="5sO-Nu-6Wk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="40" id="cWV-O9-edo"/>
                             <constraint firstItem="ZQa-gP-j9f" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="47" id="chB-3n-oRU"/>
+                            <constraint firstItem="hhf-Cy-qAe" firstAttribute="centerY" secondItem="pRF-H7-wH6" secondAttribute="centerY" constant="-0.5" id="e2t-84-kGn"/>
+                            <constraint firstItem="EUy-fh-McD" firstAttribute="leading" secondItem="d85-jC-dmf" secondAttribute="trailing" constant="-19.5" id="eMC-Xs-Z9t"/>
                             <constraint firstItem="eMS-vl-Fsr" firstAttribute="top" secondItem="bjw-TD-TLR" secondAttribute="bottom" constant="10" id="fKr-Xn-8pP"/>
                             <constraint firstAttribute="centerX" secondItem="d85-jC-dmf" secondAttribute="centerX" constant="-0.5" id="fak-Je-c89"/>
                             <constraint firstItem="d85-jC-dmf" firstAttribute="top" secondItem="Ial-Ms-hIq" secondAttribute="bottom" constant="-17" id="gCJ-fm-YtS"/>
                             <constraint firstItem="lGe-N7-6As" firstAttribute="leading" secondItem="fhg-lv-ZAr" secondAttribute="trailing" constant="8" id="kal-cI-QMg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eMS-vl-Fsr" secondAttribute="trailing" constant="36" id="kz5-KS-LPs"/>
+                            <constraint firstItem="hhf-Cy-qAe" firstAttribute="centerX" secondItem="pRF-H7-wH6" secondAttribute="centerX" constant="0.5" id="qtV-Xx-mgV"/>
                             <constraint firstAttribute="centerX" secondItem="Ial-Ms-hIq" secondAttribute="centerX" constant="-0.5" id="r6H-K7-5NJ"/>
+                            <constraint firstItem="d85-jC-dmf" firstAttribute="top" secondItem="EUy-fh-McD" secondAttribute="bottom" constant="-44" id="xAC-xG-9xd"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="5sO-Nu-6Wk" secondAttribute="bottom" constant="177" id="yDq-wp-XoK"/>
                         </constraints>
                     </view>
@@ -100,6 +121,8 @@
                         <outlet property="humidityLabel" destination="ZQa-gP-j9f" id="5xT-nQ-W3B"/>
                         <outlet property="iconView" destination="fhg-lv-ZAr" id="ZXm-Ga-nqG"/>
                         <outlet property="precipitationLabel" destination="eMS-vl-Fsr" id="5H5-4J-Btw"/>
+                        <outlet property="refreshActivityIndicator" destination="pRF-H7-wH6" id="vms-4e-Rqs"/>
+                        <outlet property="refreshButton" destination="hhf-Cy-qAe" id="80i-ox-x2x"/>
                         <outlet property="summaryLabel" destination="kL5-Rs-f6y" id="7Xy-GR-Ybp"/>
                         <outlet property="temperatureLabel" destination="d85-jC-dmf" id="Xep-cA-7z5"/>
                     </connections>
@@ -111,6 +134,8 @@
     </scenes>
     <resources>
         <image name="cloudy-night" width="46" height="43"/>
+        <image name="degree" width="36" height="36"/>
+        <image name="refresh" width="43" height="43"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

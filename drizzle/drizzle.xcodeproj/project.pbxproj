@@ -13,6 +13,7 @@
 		3E41D17319D1B15A004547DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E41D17219D1B15A004547DA /* Images.xcassets */; };
 		3E41D17F19D1B15B004547DA /* drizzleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E41D17E19D1B15B004547DA /* drizzleTests.swift */; };
 		6CC0A37C19D3B00B0043BF82 /* Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC0A37B19D3B00B0043BF82 /* Current.swift */; };
+		6CC0A37E19D86B5C0043BF82 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CC0A37D19D86B5C0043BF82 /* Launch Screen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		3E41D17D19D1B15B004547DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E41D17E19D1B15B004547DA /* drizzleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drizzleTests.swift; sourceTree = "<group>"; };
 		6CC0A37B19D3B00B0043BF82 /* Current.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Current.swift; sourceTree = "<group>"; };
+		6CC0A37D19D86B5C0043BF82 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				6CC0A37B19D3B00B0043BF82 /* Current.swift */,
 				3E41D16F19D1B15A004547DA /* Main.storyboard */,
 				3E41D17219D1B15A004547DA /* Images.xcassets */,
+				6CC0A37D19D86B5C0043BF82 /* Launch Screen.xib */,
 				3E41D16919D1B15A004547DA /* Supporting Files */,
 			);
 			path = drizzle;
@@ -194,6 +197,7 @@
 			files = (
 				3E41D17119D1B15A004547DA /* Main.storyboard in Resources */,
 				3E41D17319D1B15A004547DA /* Images.xcassets in Resources */,
+				6CC0A37E19D86B5C0043BF82 /* Launch Screen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +334,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = drizzle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -341,6 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = drizzle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
