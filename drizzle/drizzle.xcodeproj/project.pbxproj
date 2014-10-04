@@ -14,6 +14,7 @@
 		3E41D17F19D1B15B004547DA /* drizzleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E41D17E19D1B15B004547DA /* drizzleTests.swift */; };
 		6CC0A37C19D3B00B0043BF82 /* Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC0A37B19D3B00B0043BF82 /* Current.swift */; };
 		6CC0A37E19D86B5C0043BF82 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CC0A37D19D86B5C0043BF82 /* Launch Screen.xib */; };
+		6CFCABF419DF7C1F0046F31D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CFCABF319DF7C1E0046F31D /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		3E41D17E19D1B15B004547DA /* drizzleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drizzleTests.swift; sourceTree = "<group>"; };
 		6CC0A37B19D3B00B0043BF82 /* Current.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Current.swift; sourceTree = "<group>"; };
 		6CC0A37D19D86B5C0043BF82 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		6CFCABF319DF7C1E0046F31D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CFCABF419DF7C1F0046F31D /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +64,7 @@
 		3E41D15D19D1B15A004547DA = {
 			isa = PBXGroup;
 			children = (
+				6CFCABF319DF7C1E0046F31D /* CoreLocation.framework */,
 				3E41D16819D1B15A004547DA /* drizzle */,
 				3E41D17B19D1B15B004547DA /* drizzleTests */,
 				3E41D16719D1B15A004547DA /* Products */,

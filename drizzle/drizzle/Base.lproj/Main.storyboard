@@ -117,6 +117,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cityLabel" destination="lGe-N7-6As" id="xZm-St-Sha"/>
                         <outlet property="currentTimeLabel" destination="Ial-Ms-hIq" id="9pu-Y6-1bM"/>
                         <outlet property="humidityLabel" destination="ZQa-gP-j9f" id="5xT-nQ-W3B"/>
                         <outlet property="iconView" destination="fhg-lv-ZAr" id="ZXm-Ga-nqG"/>
